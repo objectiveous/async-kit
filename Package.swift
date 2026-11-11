@@ -13,9 +13,9 @@ let package = Package(
         .library(name: "AsyncKit", targets: ["AsyncKit"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-nio.git", from: "2.61.0"),
-        .package(url: "https://github.com/apple/swift-log.git", from: "1.5.3"),
-        .package(url: "https://github.com/apple/swift-collections.git", from: "1.0.5"),
+        .package(path: "../swift-nio"),
+        .package(path: "../swift-log"),
+        .package(path: "../swift-collections"),
         .package(url: "https://github.com/apple/swift-algorithms.git", from: "1.1.0"),
     ],
     targets: [
